@@ -19,7 +19,7 @@ import pyperclip
 rawtext = str(pyperclip.paste())
 
 
-# This is the Regular Expression for finding phone numbers within the string data stored in "rawtext".  A Brief
+# This is the Regular Expression Object (regex Object) for finding phone numbers within the string data stored in "rawtext".  A Brief
 # description of the various components of the regex can be seen adjacent to each constraint.
 phoneregex = re.compile(r'''(
     \(?\d{3}\)? #areacode with or without brackets
@@ -63,7 +63,7 @@ def removedivider():
         y += 1
 
 
-# This is the Regular Expression for finding emails within the string data stored in "rawtext".  A brief
+# This is the Regular Expression Object (regex Object) for finding emails within the string data stored in "rawtext".  A brief
 # description of the various components of the regex can be seen adjacent to each constraint.
 emailregex = re.compile(r'''(
     \S+         #before @
